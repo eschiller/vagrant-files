@@ -1,0 +1,1 @@
+Additional puppet modules should go here, or should be installed automatically via the Vagrantfile. Reference the puppetlabs-apache module install in the Vagrant file for an example.

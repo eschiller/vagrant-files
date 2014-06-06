@@ -13,3 +13,5 @@ To get this running, do the following:
 
  
 Currently basic.pp is the only provided manifest. The puppet defines in this file can be edited according to the settings defined by the puppetlabs-apache module, which is installed automatically.
+
+The ./project folder is synced with /var/www/project on the guest to allow for quick transfer of code to the guest web server.
