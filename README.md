@@ -12,6 +12,6 @@ To get this running, do the following:
  3. Edit the Vagrantfile "puppet.manifest_file" param as needed (defaults to basic.pp). 
 
  
-Currently basic.pp is the only provided manifest. The puppet defines in this file can be edited according to the settings defined by the puppetlabs-apache module, which is installed automatically.
+Currently basic.pp and wsgi.pp are the only provided manifests. The puppet defines in these files can be edited according to the settings defined by the puppetlabs-apache module, which is installed automatically.
 
 The ./project folder is synced with /var/www/project on the guest to allow for quick transfer of code to the guest web server.
