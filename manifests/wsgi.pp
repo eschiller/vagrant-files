@@ -1,5 +1,6 @@
 class{'apache':
   default_vhost => false,
+  require       => Exec["apt-get update"],
 }
 
 apache::vhost{"test":
@@ -36,3 +37,6 @@ file{"/var/www/project/wsgi-scripts/projname.wsgi":
 
 apache::mod {'wsgi':}
 
+exec{"apt-get update":
+  path => "/sbin:/usr/sbin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin",
+}
